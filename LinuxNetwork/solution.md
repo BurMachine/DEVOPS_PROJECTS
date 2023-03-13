@@ -116,3 +116,29 @@
 - WS2 - сервер
   ![img](pictures/iperf3_ws2.png)
 
+## Part 4. Сетевой экран
+
+### 4.1. Утилита iptables
+
+- `/etc/firewall` для  ws1
+
+   ![img](pictures/firewall_ws1.png)
+
+   ![img](pictures/firewall_ws2_run.png)
+
+
+- `/etc/firewall` для  ws2
+
+  ![img](pictures/firewall_ws2.png)
+
+  ![img](pictures/firewall_ws1_run.png)
+
+`Разница между стратегиями заключается в том что если пакет удовлетворяет правилу, то мледующие правила не учитываются.
+Следовательно если пропинговать перую машину, то ответа не поступит`
+![img](pictures/firewall_ping.png)
+
+### 4.2. Утилита nmap
+
+- `nmap 192.168.100.10` выводит `Host is up`
+
+   ![](pictures/nmap.png)
