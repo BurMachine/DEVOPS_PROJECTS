@@ -57,6 +57,62 @@
 
    Из перечисленных IP адресов шлюза возможны у сети `10.10.0.0/18`:
    `10.10.0.2`, `10.10.10.10`,  `10.10.1.255`.
-### 1
 
+## Part 2. Статическая маршрутизация между двумя машинами
+
+- Для первой машины ip a
+   ![img](pictures/ip_a_1.png)
+
+- Для второй машины ip a
+  ![img](pictures/ip_a_2.png)
+
+### Изменение адресов
+
+- WS1
+  ![img](pictures/ws1-yaml_1.png)
+- WS2
+  ![img](pictures/ws2-yaml_1.png)
+
+- `netplan apply`
+  - WS1
+    ![img](pictures/netplan_apply_ws1.png)
+  - WS2
+    ![img](pictures/netplan_apply_ws2.png)
+
+### 2.1
+
+- `ip r add(ws1)`
+   ![img](pictures/ip_r_add_ws1.png)
+
+- `ip r add(ws2)`
+  ![img](pictures/ip_r_add_ws2.png)
+
+### `ping`
+- WS1
+  ![img](pictures/ping_ws1_1.png)
+- WS2
+  ![img](pictures/ping_ws2_1.png)
+
+Для того чтоб связать я переключил настройки сети виртуальных машин на `internal network` (теперь нет выхода в интернет)
+и вручную изменил кофигурационные файлы:
+![img](pictures/config-for-routing-1.png) 
+
+(для второй машины аналогично)
+
+#### `Для удобства сделал второй сетевой интерфейс на каждой машине(для этого выключил) и добавил адаптер с конфигурацией NAT и добавл в конфиг файл`
+
+## Part 3. Утилита iperf3
+
+### 3.1
+- `8 Mbps = 1 MB/s`
+- `100 MB/s = 800000 Kbps`
+- `1 Gbps = 1000 Mbps`
+
+
+### 3.2
+`iperf3` запускается на двух машинах. На ws2 в качестве сервера, на ws1 в качестве клиента.
+- WS1 - клиент
+  ![img](pictures/iperf3_ws1.png)
+- WS2 - сервер
+  ![img](pictures/iperf3_ws2.png)
 
