@@ -221,13 +221,16 @@
 
 
 
+* ***Пинг c ws22 на ws21***
+![](pictures/dhcp_ping.png)
 
 
 
+- Измененный файл конфигурации сети на ws1
+![img.png](pictures/netplan_ws1_dhcp.png)
 
-
-
-
+- После перезапуска и установки dhcp
+![img.png](pictures/dhcp_ws11.png)
 
 
 
