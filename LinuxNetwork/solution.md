@@ -204,33 +204,57 @@
 
 ## Part 6. Динамическая настройка IP с помощью DHCP
 
+![img.png](pictures/dhcp_ws2_conf.png)
+
+* До
+![img.png](pictures/ip_a_ws21_dhcp_off.png)
 * ***Установка конфигурации, `ip a` и `ping`***
-  ![](pictures/dhcp_1.png)
+![img.png](pictures/dhcp_ws21_ip_a.png)
+![img.png](pictures/dhcp_ping_1.png)
 
 
-* ***Измененный файл конфигурации сети нв ws1 и dhcpd.conf для r1***
-  ![](pictures/dhcp_3.png)
+* ***Измененный файл конфигурации сети на ws1 и `dhcpd.conf` для r1***
+  ![img.png](pictures/config_dhcp_ws11.png)
 
 
 * ***Перезапуск dhcp и `ip a` после ребута***
-  ![](pictures/dhcp_4.png)
+    ![img.png](pictures/ws11_updated_ip.png)
 
 
-* ***Запрос обновления ws21***
-  ![](pictures/dhcp_4.png)
+* ***До запроса обновления***
+![img.png](pictures/ws21_ip_before_update.png)
+
+* ***Запрос обновления ws21 и `ip a`***
+![img.png](pictures/ws21_ip_after_update.png)
 
 
 
 * ***Пинг c ws22 на ws21***
 ![](pictures/dhcp_ping.png)
 
+  
+* В этом задании пользовался функией автоматической выдачи адреса машинам в своей сети если они ждут обновления ip.
+    Также функцией жесткой привязки по мак адресу и ручному запросу обновления адреса.
 
 
-- Измененный файл конфигурации сети на ws1
-![img.png](pictures/netplan_ws1_dhcp.png)
+## Part 7. NAT
 
-- После перезапуска и установки dhcp
-![img.png](pictures/dhcp_ws11.png)
+- `ports.conf`
+
+![img.png](pictures/apache2_port.png)
+
+
+- Пропинговал ws22 с r1
+
+![img.png](pictures/nat_ping_ws22.png)
+
+
+- Измененный `firewall.sh`
+
+![img.png](pictures/change_firewall.png)
+
+
+
 
 
 
