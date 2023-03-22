@@ -202,6 +202,9 @@
 * ***`ping -c 1 10.30.0.111`***
   ![](pictures/ping_not_exist.png)
 
+
+* исправления 
+![img.png](pictures/changed_part5.png)
 ## Part 6. Динамическая настройка IP с помощью DHCP
 
 ![img.png](pictures/dhcp_ws2_conf.png)
@@ -253,16 +256,46 @@
 
 ![img.png](pictures/change_firewall.png)
 
+- Пропинговал ws22 с r1 после изменения `firewall.sh`
+
+![img.png](pictures/ping_r1_ws22.png)
+
+
+- Добавление `SNAT` и `DNAT` в `firewall.sh`
+
+![img.png](pictures/snat_dnat_firewall.png)
+
+- Выполнение `telnet`
+
+![img.png](pictures/telnet.png)
 
 
 
+## Part 8. Дополнительно. Знакомство с SSH Tunnels
+
+- Изменен порт
+
+![img.png](pictures/ssh_1.png)
 
 
+- Статус
+
+![img.png](pictures/ssh_status.png)
 
 
+- ***TCP Local forwarding (для этого скачал `ssh` и `openssh server` на `ws22`, запустил)***
+
+![img.png](pictures/sshd_status.png)
+![img.png](pictures/local_forwarding.png)
 
 
+- ***TCP Remote Forwarding***
 
+![img.png](pictures/remote_forwarding.png)
+
+- `telnet 127.0.0.1 80`
+
+![img.png](pictures/telnet_ssh.png)
 
 
 
