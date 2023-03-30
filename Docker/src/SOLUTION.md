@@ -70,6 +70,20 @@
 
 
 
+## Part 3. Mini Web-server
+
+- Web-server on C
+![img.png](pictures/serv_on_c.png)
+
+- New nginx.conf with fastcgi add-on
+![img.png](pictures/nginx_conf_for_server.png)
+
+- Actions inside the container
+  ![img.png](pictures/ations_inside_container.png)
+
+- Page in browser with `Hello World`
+![img.png](pictures/browser_helloworld.png)
+
 
 
 
