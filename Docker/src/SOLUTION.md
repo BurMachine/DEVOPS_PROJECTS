@@ -41,17 +41,32 @@
 ![img.png](pictures/check_restart.png)
 
 
+## Part 2. Operations with container
+
+- Read the `nginx.conf` configuration file inside the docker image with the `exec` command
+![img.png](pictures/nginx_conf.png)
 
 
 
+- Copied nginx.conf
+![img.png](pictures/docker_cp.png)
+
+
+- Reloaded `nginx` (Чтобы достучаться с локальной машины нужно замаппить порты)
+![img.png](pictures/reload_nginx.png)
 
 
 
+- Stopped and checked stop
+![img.png](pictures/stopping.png)
 
 
+- Removed image and stopped container
+![img.png](pictures/rmi.png)
 
 
-
+- Import image and run
+![img_1.png](pictures/import.png)
 
 
 

@@ -1,0 +1,3 @@
+/home/artur/Рабочий стол/Projects/DEVOPS_PROJECTS/Docker/src/Part3_files/cmake-build-debug/CMakeFiles/Part3_files.dir
+/home/artur/Рабочий стол/Projects/DEVOPS_PROJECTS/Docker/src/Part3_files/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/artur/Рабочий стол/Projects/DEVOPS_PROJECTS/Docker/src/Part3_files/cmake-build-debug/CMakeFiles/rebuild_cache.dir
