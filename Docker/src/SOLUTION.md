@@ -84,6 +84,12 @@
 - Page in browser with `Hello World`
 ![img.png](pictures/browser_helloworld.png)
 
+## Part 4. Your own docker
+ 
+- Building docker container 
+![img.png](pictures/img.png)
+- Running container
+![img.png](pictures/img_1.png)
 
 
 

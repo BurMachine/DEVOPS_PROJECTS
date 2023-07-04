@@ -1,14 +1,16 @@
 FROM nginx
 
-RUN mkdir "server"
+USER root
 
-COPY main.c /server
-COPY server_run.sh /server
-COPY nginx.conf etc/nginx/
+COPY ./main.c /home/main.c
+COPY ./server_run.sh /home/server_run.sh
+COPY ./nginx.conf /etc/nginx/nginx.conf
+
+EXPOSE 8080
 
 RUN apt-get update; \
   apt-get install -y gcc spawn-fcgi libfcgi-dev
 
-WORKDIR /server/
+WORKDIR /home/
 
-CMD ["sh", "./server_run.sh"]
+ENTRYPOINT ["sh", "./server_run.sh"]
