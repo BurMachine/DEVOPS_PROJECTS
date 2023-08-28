@@ -92,16 +92,23 @@
 ![img.png](pictures/img_1.png)
 
 
+## Part 5. Dockle
+
+- Refactored doclerfile
+
+![img.png](pictures/Screenshot%202023-08-28%20at%2018.01.20.png)
 
 
+## Part 6. Docker Compose
 
+- Containers building
+![img.png](pictures/Screenshot%202023-08-28%20at%2018.17.45.png)
 
+- compose ip containers
+![img.png](pictures/Screenshot%202023-08-28%20at%2018.20.34.png)
 
-
-
-
-
-
+- curl 
+![img.png](pictures/Screenshot%202023-08-28%20at%2019.01.10.png)
 
 
 
